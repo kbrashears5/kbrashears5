@@ -1,6 +1,9 @@
 ### Recent Releases
 TODO - hook up with Github Actions
 
+# Stats
+![My github stats](https://github-readme-stats.vercel.app/api?username=kbrashears5&show_icons=true)
+
 # Repositories
 ## TypeScript
 ---
