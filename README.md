@@ -6,14 +6,12 @@ TODO - hook up with Github Actions
 
 # Repositories
 ## TypeScript
----
 [homebridge-schedule](https://github.com/kbrashears5/homebridge-schedule)
 
 [![Build Status](https://dev.azure.com/kbrashears5/github/_apis/build/status/kbrashears5.homebridge-schedule?branchName=master)](https://dev.azure.com/kbrashears5/github/_build/latest?definitionId=7&branchName=master)
 [![npm](https://img.shields.io/npm/v/homebridge-schedule)](https://img.shields.io/npm/v/homebridge-schedule)
 [![nuget](https://img.shields.io/npm/dt/homebridge-schedule)](https://img.shields.io/npm/dt/homebridge-schedule)
 [![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
-
 
 ---
 [typescript-ilogger](https://github.com/kbrashears5/typescript-ilogger)
@@ -67,3 +65,11 @@ Haven't started yet
 
 ## PowerShell
 Haven't started yet
+
+## Other
+[yaml](https://github.com/kbrashears5/yaml)
+
+---
+[code-snippets](https://github.com/kbrashears5/code-snippets)
+
+---
