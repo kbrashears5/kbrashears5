@@ -1,10 +1,12 @@
-### Recent Releases
-TODO - hook up with Github Actions
-
 # Stats
 ![My github stats](https://github-readme-stats.vercel.app/api?username=kbrashears5&show_icons=true)
 
 # Repositories
+## Github Actions
+[github-actions-file-sync](https://github.com/kbrashears5/github-action-file-sync)
+
+![Typescript File Sync](https://github.com/kbrashears5/github-actions/workflows/Typescript%20File%20Sync/badge.svg)
+
 ## TypeScript
 [homebridge-schedule](https://github.com/kbrashears5/homebridge-schedule)
 
