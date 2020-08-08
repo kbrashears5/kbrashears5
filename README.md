@@ -68,7 +68,16 @@
 
 ---
 ## .NET / .NET Core
-Still working on these
+
+[net-standard-cache-helper](https://github.com/kbrashears5/net-standard-cache-helper)
+
+[![Build Status](https://dev.azure.com/kbrashears5/github/_apis/build/status/kbrashears5.net-standard-cache-helper?branchName=master)](https://dev.azure.com/kbrashears5/github/_build/latest?definitionId=25&branchName=master)
+[![Tests](https://img.shields.io/azure-devops/tests/kbrashears5/github/25)](https://img.shields.io/azure-devops/tests/kbrashears5/github/25)
+[![Code Coverage](https://img.shields.io/azure-devops/coverage/kbrashears5/github/25)](https://img.shields.io/azure-devops/coverage/kbrashears5/github/25)
+[![nuget](https://img.shields.io/nuget/v/NetStandardCacheHelper.svg)](https://www.nuget.org/packages/NetStandardCacheHelper/)
+[![nuget](https://img.shields.io/nuget/dt/NetStandardCacheHelper)](https://img.shields.io/nuget/dt/NetStandardCacheHelper)
+
+---
 
 ## Java
 Haven't started yet
