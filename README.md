@@ -69,7 +69,15 @@
 
 ---
 ## .NET / .NET Core
+[net-standard-logger](https://github.com/kbrashears5/net-standard-logger)
 
+[![Build Status](https://dev.azure.com/kbrashears5/github/_apis/build/status/kbrashears5.net-standard-logger?branchName=master)](https://dev.azure.com/kbrashears5/github/_build/latest?definitionId=5&branchName=master)
+[![Tests](https://img.shields.io/azure-devops/tests/kbrashears5/github/5)](https://img.shields.io/azure-devops/tests/kbrashears5/github/5)
+[![Code Coverage](https://img.shields.io/azure-devops/coverage/kbrashears5/github/5)](https://img.shields.io/azure-devops/coverage/kbrashears5/github/5)
+[![nuget](https://img.shields.io/nuget/v/NetStandardLogger.svg)](https://www.nuget.org/packages/NetStandardLogger/)
+[![nuget](https://img.shields.io/nuget/dt/NetStandardLogger)](https://img.shields.io/nuget/dt/NetStandardLogger)
+
+---
 [net-standard-cache-helper](https://github.com/kbrashears5/net-standard-cache-helper)
 
 [![Build Status](https://dev.azure.com/kbrashears5/github/_apis/build/status/kbrashears5.net-standard-cache-helper?branchName=master)](https://dev.azure.com/kbrashears5/github/_build/latest?definitionId=25&branchName=master)
@@ -79,7 +87,23 @@
 [![nuget](https://img.shields.io/nuget/dt/NetStandardCacheHelper)](https://img.shields.io/nuget/dt/NetStandardCacheHelper)
 
 ---
+[net-standard-test-helper](https://github.com/kbrashears5/net-standard-test-helper)
 
+[![Build Status](https://dev.azure.com/kbrashears5/github/_apis/build/status/kbrashears5.net-standard-test-helper?branchName=master)](https://dev.azure.com/kbrashears5/github/_build/latest?definitionId=5&branchName=master)
+[![Tests](https://img.shields.io/azure-devops/tests/kbrashears5/github/4)](https://img.shields.io/azure-devops/tests/kbrashears5/github/4)
+[![Code Coverage](https://img.shields.io/azure-devops/coverage/kbrashears5/github/4)](https://img.shields.io/azure-devops/coverage/kbrashears5/github/4)
+[![nuget](https://img.shields.io/nuget/v/NetStandardTestHelper.svg)](https://www.nuget.org/packages/NetStandardTestHelper/)
+[![nuget](https://img.shields.io/nuget/dt/NetStandardTestHelper)](https://img.shields.io/nuget/dt/NetStandardTestHelper)
+
+---
+[net-standard-http-helper](https://github.com/kbrashears5/net-standard-http-helper)
+
+[![Build Status](https://dev.azure.com/kbrashears5/github/_apis/build/status/kbrashears5.net-standard-http-helper?branchName=master)](https://dev.azure.com/kbrashears5/github/_build/latest?definitionId=5&branchName=master)
+[![Tests](https://img.shields.io/azure-devops/tests/kbrashears5/github/22)](https://img.shields.io/azure-devops/tests/kbrashears5/github/22)
+[![Code Coverage](https://img.shields.io/azure-devops/coverage/kbrashears5/github/22)](https://img.shields.io/azure-devops/coverage/kbrashears5/github/22)
+[![nuget](https://img.shields.io/nuget/v/NetStandardHttpHelper.svg)](https://www.nuget.org/packages/NetStandardHttpHelper/)
+[![nuget](https://img.shields.io/nuget/dt/NetStandardHttpHelper)](https://img.shields.io/nuget/dt/NetStandardHttpHelper)
+---
 ## Java
 Haven't started yet
 
