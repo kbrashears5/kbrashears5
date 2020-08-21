@@ -1,0 +1,31 @@
+name: Net Standard File Sync
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  file_syncs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetching Local Repository
+        uses: actions/checkout@master
+      # dependabot
+      - name: Dependabot
+        uses: kbrashears5/github-action-file-sync@master
+        with:
+          REPOSITORIES: |
+            kbrashears5/net-standard-cache-helper
+            kbrashears5/net-standard-http-helper
+            kbrashears5/net-standard-logger
+            kbrashears5/net-standard-test-helper
+            kbrashears5/net-standard-aws-s3-helper
+          FILES: |
+            ./net-standard/dependabot.yml=.github/dependabot.yml
+            ./net-standard/.gitignore=.gitignore
+            ./net-standard/.editorconfig=.editorconfig
+            ./net-standard/LICENSE=LICENSE
+          TOKEN: ${{ secrets.ACTIONS }}
