@@ -101,7 +101,14 @@
 [![Code Coverage](https://img.shields.io/azure-devops/coverage/kbrashears5/github/22)](https://img.shields.io/azure-devops/coverage/kbrashears5/github/22)
 [![nuget](https://img.shields.io/nuget/v/NetStandardHttpHelper.svg)](https://www.nuget.org/packages/NetStandardHttpHelper/)
 [![nuget](https://img.shields.io/nuget/dt/NetStandardHttpHelper)](https://img.shields.io/nuget/dt/NetStandardHttpHelper)
+
 ---
+[net-standard-aws-helpers]()
+
+| Helper | Build | Test | Coverage | NuGet | Downloads |
+| --- | --- | --- | --- | --- | --- |
+| [S3Helper](https://github.com/kbrashears5/net-standard-aws-s3-helper) | [![Build Status](https://dev.azure.com/kbrashears5/github/_apis/build/status/kbrashears5.net-standard-aws-s3-helper?branchName=master)](https://dev.azure.com/kbrashears5/github/_build/latest?definitionId=6&branchName=master) | [![Tests](https://img.shields.io/azure-devops/tests/kbrashears5/github/6)](https://img.shields.io/azure-devops/tests/kbrashears5/github/6) | [![Code Coverage](https://img.shields.io/azure-devops/coverage/kbrashears5/github/6)](https://img.shields.io/azure-devops/coverage/kbrashears5/github/6) | [![NuGet Version](https://img.shields.io/nuget/v/net-standard-aws-s3-helper)](https://img.shields.io/nuget/v/net-standard-aws-s3-helper) | [![Downloads](https://img.shields.io/nuget/dt/net-standard-aws-s3-helper)](https://img.shields.io/nuget/dt/net-standard-aws-s3-helper) |
+
 ## Java
 Haven't started yet
 
