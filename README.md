@@ -3,9 +3,9 @@
 
 # Repositories
 ## Github Actions
-| Repo | Issues | Implementations |
-| --- | --- | --- |
-| [github-actions-file-sync](https://github.com/kbrashears5/github-action-file-sync) | [![issues](https://img.shields.io/github/issues-raw/kbrashears5/github-action-file-sync)](https://img.shields.io/github/issues-raw/kbrashears5/github-action-file-sync) | ![Typescript File Sync](https://github.com/kbrashears5/kbrashears5/workflows/Typescript%20File%20Sync/badge.svg) ![Net Standard File Sync](https://github.com/kbrashears5/kbrashears5/workflows/Net%20Standard%20File%20Sync/badge.svg)
+| Repo | Version | Issues | Implementations |
+| --- | --- | --- | --- |
+| [github-actions-file-sync](https://github.com/kbrashears5/github-action-file-sync) | [![version](https://img.shields.io/github/v/release/kbrashears5/github-action-file-sync)](https://img.shields.io/github/v/release/kbrashears5/github-action-file-sync) | [![issues](https://img.shields.io/github/issues-raw/kbrashears5/github-action-file-sync)](https://img.shields.io/github/issues-raw/kbrashears5/github-action-file-sync) | ![Typescript File Sync](https://github.com/kbrashears5/kbrashears5/workflows/Typescript%20File%20Sync/badge.svg) ![Net Standard File Sync](https://github.com/kbrashears5/kbrashears5/workflows/Net%20Standard%20File%20Sync/badge.svg)
 
 ## TypeScript
 | Repo | Build | Tests | Code Coverage | NPM Version | Downloads | Issues | Extras |
