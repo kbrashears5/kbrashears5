@@ -6,7 +6,7 @@
 | Repo | Version | Issues | Implementations |
 | --- | --- | --- | --- |
 | [github-actions-file-sync](https://github.com/kbrashears5/github-action-file-sync) | [![version](https://img.shields.io/github/v/release/kbrashears5/github-action-file-sync)](https://img.shields.io/github/v/release/kbrashears5/github-action-file-sync) | [![issues](https://img.shields.io/github/issues-raw/kbrashears5/github-action-file-sync)](https://img.shields.io/github/issues-raw/kbrashears5/github-action-file-sync) | ![sync](https://img.shields.io/github/workflow/status/kbrashears5/kbrashears5/Typescript%20File%20Sync?label=typescript-file-sync) ![sync](https://img.shields.io/github/workflow/status/kbrashears5/kbrashears5/Net%20Standard%20File%20Sync?label=net-standard-file-sync) |
-| [github-actions-repo-sync](https://github.com/kbrashears5/github-action-repo-sync) | [![version](https://img.shields.io/github/v/release/kbrashears5/github-action-repo-sync)](https://img.shields.io/github/v/release/kbrashears5/github-action-repo-sync) | [![issues](https://img.shields.io/github/issues-raw/kbrashears5/github-action-repo-sync)](https://img.shields.io/github/issues-raw/kbrashears5/github-action-repo-sync) | 
+| [github-actions-repo-sync](https://github.com/kbrashears5/github-action-repo-sync) | [![version](https://img.shields.io/github/v/release/kbrashears5/github-action-repo-sync)](https://img.shields.io/github/v/release/kbrashears5/github-action-repo-sync) | [![issues](https://img.shields.io/github/issues-raw/kbrashears5/github-action-repo-sync)](https://img.shields.io/github/issues-raw/kbrashears5/github-action-repo-sync) | See Typescript table under the Sync column |
 
 ## TypeScript
 | Repo | Build | Tests | Code Coverage | NPM Version | Downloads | Issues | Sync |
