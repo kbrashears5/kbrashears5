@@ -1,4 +1,4 @@
-name: Repo Setup
+name: Repo Settings Sync
 
 on:
   push:
@@ -8,11 +8,11 @@ on:
     - cron: 0 0 * * *
 
 jobs:
-  repo_setup:
+  repo_settings_sync:
     runs-on: ubuntu-latest
     steps:
       - name: Repo Setup
-        uses: kbrashears5/github-action-repo-setup@master
+        uses: kbrashears5/github-action-repo-settings-sync@master
         with:
           TOKEN: ${{ secrets.ACTIONS }}
           SQUASH_MERGE: 'true'
