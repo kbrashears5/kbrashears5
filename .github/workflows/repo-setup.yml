@@ -1,0 +1,21 @@
+name: Repo Setup
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  repo_setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo Setup
+        uses: kbrashears5/github-action-repo-setup@master
+        with:
+          TOKEN: ${{ secrets.ACTIONS }}
+          SQUASH_MERGE: 'true'
+          MERGE_COMMIT: 'false'
+          REBASE_MERGE: 'false'
+          DELETE_HEAD: 'true'
