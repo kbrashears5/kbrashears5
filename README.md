@@ -53,9 +53,7 @@ Haven't started yet
 Haven't started yet
 
 ## Other
-[yaml](https://github.com/kbrashears5/yaml)
-
----
-[code-snippets](https://github.com/kbrashears5/code-snippets)
-
----
+| Repo | Issues |
+| --- | --- |
+| [yaml](https://github.com/kbrashears5/yaml) | [![issues](https://img.shields.io/github/issues-raw/kbrashears5/yaml)](https://img.shields.io/github/issues-raw/kbrashears5/yaml) |
+| [code-snippets](https://github.com/kbrashears5/code-snippets) | [![issues](https://img.shields.io/github/issues-raw/kbrashears5/code-snippets)](https://img.shields.io/github/issues-raw/kbrashears5/code-snippets) |
