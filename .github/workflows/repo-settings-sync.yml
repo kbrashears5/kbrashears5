@@ -16,6 +16,7 @@ jobs:
         with:
           TOKEN: ${{ secrets.ACTIONS }}
           ALLOW_PROJECTS: 'false'
+          ALLOW_WIKI: 'false'
           SQUASH_MERGE: 'true'
           MERGE_COMMIT: 'false'
           REBASE_MERGE: 'false'
