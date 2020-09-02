@@ -18,9 +18,9 @@ jobs:
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
-            kbrashears5/github-actions-file-sync
-            kbrashears5/github-actions-repo-sync
-            kbrashears5/github-actions-repo-settings-sync
+            kbrashears5/github-action-file-sync
+            kbrashears5/github-action-repo-sync
+            kbrashears5/github-action-repo-settings-sync
           FILES: |
             shell/azure-pipelines.yml
           TOKEN: ${{ secrets.ACTIONS }}
