@@ -1,0 +1,26 @@
+name: Shell File Sync
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  file_syncs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetching Local Repository
+        uses: actions/checkout@master
+      # azure pipelines
+      - name: Azure Pipelines
+        uses: kbrashears5/github-action-file-sync@master
+        with:
+          REPOSITORIES: |
+            kbrashears5/github-actions-file-sync
+            kbrashears5/github-actions-repo-sync
+            kbrashears5/github-actions-repo-settings-sync
+          FILES: |
+            ./shell/azure-pipelines.yml=azure-pipelines.yml
+          TOKEN: ${{ secrets.ACTIONS }}
