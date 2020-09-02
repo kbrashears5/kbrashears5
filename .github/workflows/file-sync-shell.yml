@@ -22,5 +22,5 @@ jobs:
             kbrashears5/github-actions-repo-sync
             kbrashears5/github-actions-repo-settings-sync
           FILES: |
-            ./shell/azure-pipelines.yml=azure-pipelines.yml
+            shell/azure-pipelines.yml
           TOKEN: ${{ secrets.ACTIONS }}
