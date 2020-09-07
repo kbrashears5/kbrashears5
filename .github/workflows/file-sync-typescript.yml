@@ -61,6 +61,7 @@ jobs:
             kbrashears5/typescript-aws-ssm-helper
             kbrashears5/typescript-aws-sts-helper
           FILES: |
+            release-maker.yml=.github/workflows/release-maker.yml
             ./typescript/.npmrc
             ./typescript/.gitignore
             ./typescript/LICENSE

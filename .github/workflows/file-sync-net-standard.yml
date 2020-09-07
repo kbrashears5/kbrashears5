@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Fetching Local Repository
         uses: actions/checkout@master
-      # dependabot
+      # base files
       - name: Base
         uses: kbrashears5/github-action-file-sync@master
         with:
@@ -24,6 +24,7 @@ jobs:
             kbrashears5/net-standard-test-helper
             kbrashears5/net-standard-aws-s3-helper
           FILES: |
+            release-maker.yml=.github/workflows/release-maker.yml
             ./net-standard/dependabot.yml=.github/dependabot.yml
             ./net-standard/.gitignore=.gitignore
             ./net-standard/.editorconfig=.editorconfig

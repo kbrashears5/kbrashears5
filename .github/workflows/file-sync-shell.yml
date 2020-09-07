@@ -21,6 +21,8 @@ jobs:
             kbrashears5/github-action-file-sync
             kbrashears5/github-action-repo-sync
             kbrashears5/github-action-repo-settings-sync
+            kbrashears5/github-action-release-maker
           FILES: |
+            release-maker.yml=.github/workflows/release-maker.yml
             shell/azure-pipelines.yml
           TOKEN: ${{ secrets.ACTIONS }}
