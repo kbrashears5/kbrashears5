@@ -23,6 +23,7 @@ jobs:
             kbrashears5/net-standard-logger
             kbrashears5/net-standard-test-helper
             kbrashears5/net-standard-aws-s3-helper
+            kbrashears5/net-standard-aws-sqs-helper
           FILES: |
             release-maker.yml=.github/workflows/release-maker.yml
             ./net-standard/dependabot.yml=.github/dependabot.yml
