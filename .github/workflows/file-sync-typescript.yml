@@ -43,15 +43,12 @@ jobs:
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
-            kbrashears5/template-typescript
-            kbrashears5/typescript-helper-functions
-            kbrashears5/typescript-cache-helper
-            kbrashears5/typescript-ilogger
             kbrashears5/homebridge-schedule
-            kbrashears5/typescript-aws-helpers
+            kbrashears5/template-typescript
             kbrashears5/typescript-aws-apigateway-helper
             kbrashears5/typescript-aws-cloudwatch-helper
             kbrashears5/typescript-aws-dynamo-helper
+            kbrashears5/typescript-aws-helpers
             kbrashears5/typescript-aws-kms-helper
             kbrashears5/typescript-aws-lambda-helper
             kbrashears5/typescript-aws-s3-helper
@@ -60,6 +57,9 @@ jobs:
             kbrashears5/typescript-aws-sqs-helper
             kbrashears5/typescript-aws-ssm-helper
             kbrashears5/typescript-aws-sts-helper
+            kbrashears5/typescript-cache-helper
+            kbrashears5/typescript-helper-functions
+            kbrashears5/typescript-ilogger
           FILES: |
             release-maker.yml=.github/workflows/release-maker.yml
             ./typescript/.npmrc
@@ -67,6 +67,7 @@ jobs:
             ./typescript/LICENSE
             ./typescript/tslint.json
             ./typescript/sync-github-with-package-json.yml=./.github/workflows/sync-github-with-package-json.yml
+            ./typescript/codeql-analysis.yml=./.github/workflows/codeql-analysis.yml
           TOKEN: ${{ secrets.ACTIONS }}
       # tsconfig - lib
       - name: tsconfig - lib

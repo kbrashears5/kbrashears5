@@ -29,4 +29,5 @@ jobs:
             ./net-standard/.gitignore=.gitignore
             ./net-standard/.editorconfig=.editorconfig
             ./net-standard/LICENSE=LICENSE
+            ./net-standard/codeql-analysis.yml=./.github/workflows/codeql-analysis.yml
           TOKEN: ${{ secrets.ACTIONS }}
