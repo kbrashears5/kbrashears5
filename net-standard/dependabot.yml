@@ -5,7 +5,7 @@ updates:
     directory: "/"
     # daily at 5am UTC
     schedule:
-      interval: "daily"
+      interval: "weekly"
     # set reviewers
     reviewers:
       - "kbrashears5"
