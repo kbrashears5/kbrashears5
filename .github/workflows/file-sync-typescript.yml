@@ -19,7 +19,6 @@ jobs:
         with:
           REPOSITORIES: |
             kbrashears5/homebridge-schedule
-            kbrashears5/template-typescript
             kbrashears5/typescript-helper-functions
             kbrashears5/typescript-cache-helper
             kbrashears5/typescript-ilogger
@@ -44,7 +43,6 @@ jobs:
         with:
           REPOSITORIES: |
             kbrashears5/homebridge-schedule
-            kbrashears5/template-typescript
             kbrashears5/typescript-aws-apigateway-helper
             kbrashears5/typescript-aws-cloudwatch-helper
             kbrashears5/typescript-aws-dynamo-helper
@@ -74,7 +72,6 @@ jobs:
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
-            kbrashears5/template-typescript
             kbrashears5/typescript-helper-functions
             kbrashears5/typescript-cache-helper
             kbrashears5/typescript-ilogger
@@ -117,7 +114,6 @@ jobs:
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
-            kbrashears5/template-typescript
             kbrashears5/typescript-helper-functions
             kbrashears5/typescript-cache-helper
             kbrashears5/typescript-aws-apigateway-helper
