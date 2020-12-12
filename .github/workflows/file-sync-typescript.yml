@@ -63,33 +63,10 @@ jobs:
             typescript/.gitignore
             typescript/LICENSE
             typescript/tslint.json
-          TOKEN: ${{ secrets.ACTIONS }}
-      # workflow files
-      - name: Workflow Files
-        uses: kbrashears5/github-action-file-sync@master
-        with:
-          REPOSITORIES: |
-            kbrashears5/homebridge-schedule
-            kbrashears5/typescript-aws-apigateway-helper
-            kbrashears5/typescript-aws-cloudwatch-helper
-            kbrashears5/typescript-aws-dynamo-helper
-            kbrashears5/typescript-aws-helpers
-            kbrashears5/typescript-aws-kms-helper
-            kbrashears5/typescript-aws-lambda-helper
-            kbrashears5/typescript-aws-s3-helper
-            kbrashears5/typescript-aws-ses-helper
-            kbrashears5/typescript-aws-sns-helper
-            kbrashears5/typescript-aws-sqs-helper
-            kbrashears5/typescript-aws-ssm-helper
-            kbrashears5/typescript-aws-sts-helper
-            kbrashears5/typescript-cache-helper
-            kbrashears5/typescript-helper-functions
-            kbrashears5/typescript-ilogger
-          FILES: |
             release-maker.yml=.github/workflows/release-maker.yml
             typescript/sync-github-with-package-json.yml=.github/workflows/sync-github-with-package-json.yml
             typescript/codeql-analysis.yml=.github/workflows/codeql-analysis.yml
-          TOKEN: ${{ secrets.WORKFLOWS }}
+          TOKEN: ${{ secrets.ACTIONS }}
       # tsconfig - lib
       - name: tsconfig - lib
         uses: kbrashears5/github-action-file-sync@master
