@@ -35,7 +35,7 @@ jobs:
             kbrashears5/typescript-aws-ssm-helper
             kbrashears5/typescript-aws-sts-helper
           FILES: |
-            ./typescript/dependabot.yml=.github/dependabot.yml
+            typescript/dependabot.yml=.github/dependabot.yml
           TOKEN: ${{ secrets.ACTIONS }}
       # base
       - name: Base
@@ -60,12 +60,12 @@ jobs:
             kbrashears5/typescript-ilogger
           FILES: |
             release-maker.yml=.github/workflows/release-maker.yml
-            ./typescript/.npmrc
-            ./typescript/.gitignore
-            ./typescript/LICENSE
-            ./typescript/tslint.json
-            ./typescript/sync-github-with-package-json.yml=./.github/workflows/sync-github-with-package-json.yml
-            ./typescript/codeql-analysis.yml=./.github/workflows/codeql-analysis.yml
+            typescript/.npmrc
+            typescript/.gitignore
+            typescript/LICENSE
+            typescript/tslint.json
+            typescript/sync-github-with-package-json.yml=.github/workflows/sync-github-with-package-json.yml
+            typescript/codeql-analysis.yml=.github/workflows/codeql-analysis.yml
           TOKEN: ${{ secrets.ACTIONS }}
       # tsconfig - lib
       - name: tsconfig - lib
@@ -88,7 +88,7 @@ jobs:
             kbrashears5/typescript-aws-ssm-helper
             kbrashears5/typescript-aws-sts-helper
           FILES: |
-            ./typescript/tsconfig-lib.json=tsconfig.json
+            typescript/tsconfig-lib.json=tsconfig.json
           TOKEN: ${{ secrets.ACTIONS }}
       # tsconfig - dist
       - name: tsconfig - dist
@@ -97,7 +97,7 @@ jobs:
           REPOSITORIES: |
             kbrashears5/homebridge-schedule
           FILES: |
-            ./typescript/tsconfig-dist.json=tsconfig.json
+            typescript/tsconfig-dist.json=tsconfig.json
           TOKEN: ${{ secrets.ACTIONS }}
       # azure pipelines no tests
       - name: Azure Pipelines No Tests
@@ -107,7 +107,7 @@ jobs:
             kbrashears5/typescript-ilogger
             kbrashears5/homebridge-schedule
           FILES: |
-            ./typescript/azure-pipelines.yml
+            typescript/azure-pipelines.yml
           TOKEN: ${{ secrets.ACTIONS }}
       # azure pipelines with tests
       - name: Azure Pipelines With Tests
@@ -128,7 +128,7 @@ jobs:
             kbrashears5/typescript-aws-ssm-helper
             kbrashears5/typescript-aws-sts-helper
           FILES: |
-            ./typescript/azure-pipelines-tests.yml=azure-pipelines.yml
+            typescript/azure-pipelines-tests.yml=azure-pipelines.yml
           TOKEN: ${{ secrets.ACTIONS }}
       # azure pipelines v2 no tests
       - name: Azure Pipelines With Tests
@@ -137,5 +137,5 @@ jobs:
           REPOSITORIES: |
             kbrashears5/typescript-aws-helpers
           FILES: |
-            ./typescript/azure-pipelines-v2.yml=azure-pipelines.yml
+            typescript/azure-pipelines-v2.yml=azure-pipelines.yml
           TOKEN: ${{ secrets.ACTIONS }}

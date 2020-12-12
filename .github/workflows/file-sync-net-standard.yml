@@ -26,9 +26,9 @@ jobs:
             kbrashears5/net-standard-aws-sqs-helper
           FILES: |
             release-maker.yml=.github/workflows/release-maker.yml
-            ./net-standard/dependabot.yml=.github/dependabot.yml
-            ./net-standard/.gitignore=.gitignore
-            ./net-standard/.editorconfig=.editorconfig
-            ./net-standard/LICENSE=LICENSE
-            ./net-standard/codeql-analysis.yml=./.github/workflows/codeql-analysis.yml
+            net-standard/dependabot.yml=.github/dependabot.yml
+            net-standard/.gitignore=.gitignore
+            net-standard/.editorconfig=.editorconfig
+            net-standard/LICENSE=LICENSE
+            net-standard/codeql-analysis.yml=.github/workflows/codeql-analysis.yml
           TOKEN: ${{ secrets.ACTIONS }}
