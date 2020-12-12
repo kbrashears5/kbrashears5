@@ -58,3 +58,4 @@ Haven't started yet
 | --- | --- |
 | [yaml](https://github.com/kbrashears5/yaml) | [![issues](https://img.shields.io/github/issues-raw/kbrashears5/yaml)](https://img.shields.io/github/issues-raw/kbrashears5/yaml) |
 | [code-snippets](https://github.com/kbrashears5/code-snippets) | [![issues](https://img.shields.io/github/issues-raw/kbrashears5/code-snippets)](https://img.shields.io/github/issues-raw/kbrashears5/code-snippets) |
+| [powershell](https://github.com/kbrashears5/powershell) | [![issues](https://img.shields.io/github/issues-raw/kbrashears5/powershell)](https://img.shields.io/github/issues-raw/kbrashears5/powershell) |

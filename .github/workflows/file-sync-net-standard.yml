@@ -13,8 +13,25 @@ jobs:
     steps:
       - name: Fetching Local Repository
         uses: actions/checkout@master
-      # base files
-      - name: Base
+      # regular files
+      - name: Regular Files
+        uses: kbrashears5/github-action-file-sync@master
+        with:
+          REPOSITORIES: |
+            kbrashears5/net-standard-cache-helper
+            kbrashears5/net-standard-http-helper
+            kbrashears5/net-standard-logger
+            kbrashears5/net-standard-test-helper
+            kbrashears5/net-standard-aws-s3-helper
+            kbrashears5/net-standard-aws-sqs-helper
+          FILES: |
+            net-standard/dependabot.yml=.github/dependabot.yml
+            net-standard/.gitignore=.gitignore
+            net-standard/.editorconfig=.editorconfig
+            net-standard/LICENSE=LICENSE
+          TOKEN: ${{ secrets.ACTIONS }}
+      # Workflow files
+      - name: Workflow files
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
@@ -26,9 +43,5 @@ jobs:
             kbrashears5/net-standard-aws-sqs-helper
           FILES: |
             release-maker.yml=.github/workflows/release-maker.yml
-            net-standard/dependabot.yml=.github/dependabot.yml
-            net-standard/.gitignore=.gitignore
-            net-standard/.editorconfig=.editorconfig
-            net-standard/LICENSE=LICENSE
             net-standard/codeql-analysis.yml=.github/workflows/codeql-analysis.yml
-          TOKEN: ${{ secrets.ACTIONS }}
+          TOKEN: ${{ secrets.WORKFLOWS }}

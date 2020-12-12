@@ -13,8 +13,20 @@ jobs:
     steps:
       - name: Fetching Local Repository
         uses: actions/checkout@master
-      # azure pipelines
-      - name: Azure Pipelines
+      # regular files
+      - name: Regular Files
+        uses: kbrashears5/github-action-file-sync@master
+        with:
+          REPOSITORIES: |
+            kbrashears5/github-action-file-sync
+            kbrashears5/github-action-repo-sync
+            kbrashears5/github-action-repo-settings-sync
+            kbrashears5/github-action-release-maker
+          FILES: |
+            shell/azure-pipelines.yml
+          TOKEN: ${{ secrets.ACTIONS }}
+      # workflow files
+      - name: Workflow Files
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
@@ -24,6 +36,5 @@ jobs:
             kbrashears5/github-action-release-maker
           FILES: |
             release-maker.yml=.github/workflows/release-maker.yml
-            shell/azure-pipelines.yml
             shell/sync-github-with-metadata-json.yml=.github/workflows/sync-github-with-metadata-json.yml
-          TOKEN: ${{ secrets.ACTIONS }}
+          TOKEN: ${{ secrets.WORKFLOWS }}
