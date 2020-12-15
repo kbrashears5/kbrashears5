@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Fetching Local Repository
         uses: actions/checkout@master
-      # dependabot
-      - name: Dependabot
+      # all
+      - name: All
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
@@ -34,36 +34,14 @@ jobs:
             kbrashears5/typescript-aws-sqs-helper
             kbrashears5/typescript-aws-ssm-helper
             kbrashears5/typescript-aws-sts-helper
-          FILES: |
-            typescript/dependabot.yml=.github/dependabot.yml
-          TOKEN: ${{ secrets.ACTIONS }}
-      # base
-      - name: Base
-        uses: kbrashears5/github-action-file-sync@master
-        with:
-          REPOSITORIES: |
-            kbrashears5/homebridge-schedule
-            kbrashears5/typescript-aws-apigateway-helper
-            kbrashears5/typescript-aws-cloudwatch-helper
-            kbrashears5/typescript-aws-dynamo-helper
-            kbrashears5/typescript-aws-helpers
-            kbrashears5/typescript-aws-kms-helper
-            kbrashears5/typescript-aws-lambda-helper
-            kbrashears5/typescript-aws-s3-helper
-            kbrashears5/typescript-aws-ses-helper
-            kbrashears5/typescript-aws-sns-helper
-            kbrashears5/typescript-aws-sqs-helper
-            kbrashears5/typescript-aws-ssm-helper
-            kbrashears5/typescript-aws-sts-helper
-            kbrashears5/typescript-cache-helper
-            kbrashears5/typescript-helper-functions
-            kbrashears5/typescript-ilogger
           FILES: |
             typescript/.npmrc
             typescript/.gitignore
             typescript/LICENSE
             typescript/tslint.json
+            typescript/dependabot.yml=.github/dependabot.yml
             release-maker.yml=.github/workflows/release-maker.yml
+            .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
             typescript/sync-github-with-package-json.yml=.github/workflows/sync-github-with-package-json.yml
             typescript/codeql-analysis.yml=.github/workflows/codeql-analysis.yml
           TOKEN: ${{ secrets.ACTIONS }}
