@@ -8,7 +8,7 @@ on:
     - cron: 0 0 * * *
 
 jobs:
-  file_sync:
+  collabs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetching Local Repository
