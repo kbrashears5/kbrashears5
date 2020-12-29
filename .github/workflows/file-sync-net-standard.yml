@@ -31,5 +31,6 @@ jobs:
             net-standard/LICENSE=LICENSE
             release-maker.yml=.github/workflows/release-maker.yml
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
+            .github/workflows/stale-issues.yml=.github/workflows/stale-issues.yml
             net-standard/codeql-analysis.yml=.github/workflows/codeql-analysis.yml
           TOKEN: ${{ secrets.ACTIONS }}

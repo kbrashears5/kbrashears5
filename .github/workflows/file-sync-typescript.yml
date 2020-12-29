@@ -42,6 +42,7 @@ jobs:
             typescript/dependabot.yml=.github/dependabot.yml
             release-maker.yml=.github/workflows/release-maker.yml
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
+            .github/workflows/stale-issues.yml=.github/workflows/stale-issues.yml
             typescript/sync-github-with-package-json.yml=.github/workflows/sync-github-with-package-json.yml
             typescript/codeql-analysis.yml=.github/workflows/codeql-analysis.yml
           TOKEN: ${{ secrets.ACTIONS }}
