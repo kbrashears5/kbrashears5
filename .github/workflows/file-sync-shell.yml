@@ -26,6 +26,7 @@ jobs:
             kbrashears5/github-action-auto-accept-collabs
             kbrashears5/github-action-auto-create-collabs
           FILES: |
+            LICENSE
             shell/azure-pipelines.yml
             release-maker.yml=.github/workflows/release-maker.yml
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml

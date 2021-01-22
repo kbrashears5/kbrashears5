@@ -25,10 +25,10 @@ jobs:
             kbrashears5/net-standard-aws-s3-helper
             kbrashears5/net-standard-aws-sqs-helper
           FILES: |
+            LICENSE
             net-standard/dependabot.yml=.github/dependabot.yml
             net-standard/.gitignore=.gitignore
             net-standard/.editorconfig=.editorconfig
-            net-standard/LICENSE=LICENSE
             release-maker.yml=.github/workflows/release-maker.yml
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
             .github/workflows/stale-issues.yml=.github/workflows/stale-issues.yml

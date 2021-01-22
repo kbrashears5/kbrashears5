@@ -35,9 +35,9 @@ jobs:
             kbrashears5/typescript-aws-ssm-helper
             kbrashears5/typescript-aws-sts-helper
           FILES: |
+            LICENSE
             typescript/.npmrc
             typescript/.gitignore
-            typescript/LICENSE
             typescript/tslint.json
             typescript/dependabot.yml=.github/dependabot.yml
             release-maker.yml=.github/workflows/release-maker.yml
@@ -78,8 +78,8 @@ jobs:
           FILES: |
             typescript/tsconfig-dist.json=tsconfig.json
           TOKEN: ${{ secrets.ACTIONS }}
-      # azure pipelines no tests
-      - name: Azure Pipelines No Tests
+      # azure pipelines v1 no tests
+      - name: Azure Pipelines V1 No Tests
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
@@ -88,13 +88,21 @@ jobs:
           FILES: |
             typescript/azure-pipelines.yml
           TOKEN: ${{ secrets.ACTIONS }}
-      # azure pipelines with tests
-      - name: Azure Pipelines With Tests
+      # azure pipelines v1 with tests
+      - name: Azure Pipelines V1 With Tests
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
             kbrashears5/typescript-helper-functions
             kbrashears5/typescript-cache-helper
+          FILES: |
+            typescript/azure-pipelines-tests.yml=azure-pipelines.yml
+          TOKEN: ${{ secrets.ACTIONS }}
+      # azure pipelines v2 with tests
+      - name: Azure Pipelines V2 With Tests
+        uses: kbrashears5/github-action-file-sync@master
+        with:
+          REPOSITORIES: |
             kbrashears5/typescript-aws-apigateway-helper
             kbrashears5/typescript-aws-cloudwatch-helper
             kbrashears5/typescript-aws-dynamo-helper
@@ -107,10 +115,10 @@ jobs:
             kbrashears5/typescript-aws-ssm-helper
             kbrashears5/typescript-aws-sts-helper
           FILES: |
-            typescript/azure-pipelines-tests.yml=azure-pipelines.yml
+            typescript/azure-pipelines-v2-tests.yml=azure-pipelines.yml
           TOKEN: ${{ secrets.ACTIONS }}
       # azure pipelines v2 no tests
-      - name: Azure Pipelines With Tests
+      - name: Azure Pipelines V2 No Tests
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |

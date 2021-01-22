@@ -20,6 +20,7 @@ jobs:
           REPOSITORIES: |
             kbrashears5/github-secret-recycler
           FILES: |
+            LICENSE
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
             .github/workflows/stale-issues.yml=.github/workflows/stale-issues.yml
             python/sync-github-with-metadata-json.yml=.github/workflows/sync-github-with-metadata-json.yml
