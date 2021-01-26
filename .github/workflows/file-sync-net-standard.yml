@@ -24,6 +24,7 @@ jobs:
             kbrashears5/net-standard-test-helper
             kbrashears5/net-standard-aws-s3-helper
             kbrashears5/net-standard-aws-sqs-helper
+            kbrashears5/net-standard-opc-ua-helper
           FILES: |
             LICENSE
             net-standard/dependabot.yml=.github/dependabot.yml

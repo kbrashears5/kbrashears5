@@ -360,4 +360,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # XML documentation files
-**/*.xml
+**/documentation.xml
