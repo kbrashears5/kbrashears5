@@ -6,9 +6,12 @@
         "dependabot",
         "editorconfig",
         "entrypoint",
+        "eslintignore",
         "homebridge",
         "ilogger",
         "npmrc",
-        "nuget"
+        "nuget",
+        "prettierignore",
+        "prettierrc"
     ]
 }

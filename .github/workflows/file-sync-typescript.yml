@@ -36,9 +36,13 @@ jobs:
             kbrashears5/typescript-aws-sts-helper
           FILES: |
             LICENSE
-            typescript/.npmrc
+            typescript/.eslintignore
+            typescript/.eslintrc.yml
             typescript/.gitignore
-            typescript/tslint.json
+            typescript/.npmrc
+            typescript/.prettierignore
+            typescript/.prettierrc.yml
+            typescript/tsconfig.eslint.json
             typescript/dependabot.yml=.github/dependabot.yml
             release-maker.yml=.github/workflows/release-maker.yml
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
