@@ -14,10 +14,10 @@ jobs:
       - name: Repo Setup
         uses: kbrashears5/github-action-repo-settings-sync@master
         with:
-          TOKEN: ${{ secrets.ACTIONS }}
           ALLOW_PROJECTS: 'false'
           ALLOW_WIKI: 'false'
           SQUASH_MERGE: 'true'
           MERGE_COMMIT: 'false'
           REBASE_MERGE: 'false'
           DELETE_HEAD: 'true'
+          TOKEN: ${{ secrets.ACTIONS }}
