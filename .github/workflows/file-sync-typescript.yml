@@ -19,13 +19,10 @@ jobs:
         with:
           REPOSITORIES: |
             kbrashears5/homebridge-schedule
-            kbrashears5/typescript-helper-functions
-            kbrashears5/typescript-cache-helper
-            kbrashears5/typescript-ilogger
-            kbrashears5/typescript-aws-helpers
             kbrashears5/typescript-aws-apigateway-helper
             kbrashears5/typescript-aws-cloudwatch-helper
             kbrashears5/typescript-aws-dynamo-helper
+            kbrashears5/typescript-aws-helpers
             kbrashears5/typescript-aws-kms-helper
             kbrashears5/typescript-aws-lambda-helper
             kbrashears5/typescript-aws-s3-helper
@@ -34,7 +31,12 @@ jobs:
             kbrashears5/typescript-aws-sqs-helper
             kbrashears5/typescript-aws-ssm-helper
             kbrashears5/typescript-aws-sts-helper
+            kbrashears5/typescript-cache-helper
+            kbrashears5/typescript-helper-functions
+            kbrashears5/typescript-ilogger
           FILES: |
+            .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
+            .github/workflows/stale-issues.yml=.github/workflows/stale-issues.yml
             LICENSE
             typescript/.eslintignore
             typescript/.eslintrc.yml
@@ -42,26 +44,22 @@ jobs:
             typescript/.npmrc
             typescript/.prettierignore
             typescript/.prettierrc.yml
-            typescript/tsconfig.eslint.json
-            typescript/dependabot.yml=.github/dependabot.yml
-            release-maker.yml=.github/workflows/release-maker.yml
-            .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
-            .github/workflows/stale-issues.yml=.github/workflows/stale-issues.yml
-            typescript/sync-github-with-package-json.yml=.github/workflows/sync-github-with-package-json.yml
+            typescript/ci-cd.yml=.github/workflows/ci-cd.yml
             typescript/codeql-analysis.yml=.github/workflows/codeql-analysis.yml
+            typescript/dependabot.yml=.github/dependabot.yml
+            typescript/pre-commit=.githooks/pre-commit
+            typescript/sync-github-with-package-json.yml=.github/workflows/sync-github-with-package-json.yml
+            typescript/tsconfig.eslint.json
           TOKEN: ${{ secrets.ACTIONS }}
       # tsconfig - lib
       - name: tsconfig - lib
         uses: kbrashears5/github-action-file-sync@master
         with:
           REPOSITORIES: |
-            kbrashears5/typescript-helper-functions
-            kbrashears5/typescript-cache-helper
-            kbrashears5/typescript-ilogger
-            kbrashears5/typescript-aws-helpers
             kbrashears5/typescript-aws-apigateway-helper
             kbrashears5/typescript-aws-cloudwatch-helper
             kbrashears5/typescript-aws-dynamo-helper
+            kbrashears5/typescript-aws-helpers
             kbrashears5/typescript-aws-kms-helper
             kbrashears5/typescript-aws-lambda-helper
             kbrashears5/typescript-aws-s3-helper
@@ -70,6 +68,9 @@ jobs:
             kbrashears5/typescript-aws-sqs-helper
             kbrashears5/typescript-aws-ssm-helper
             kbrashears5/typescript-aws-sts-helper
+            kbrashears5/typescript-cache-helper
+            kbrashears5/typescript-helper-functions
+            kbrashears5/typescript-ilogger
           FILES: |
             typescript/tsconfig-lib.json=tsconfig.json
           TOKEN: ${{ secrets.ACTIONS }}
@@ -81,52 +82,4 @@ jobs:
             kbrashears5/homebridge-schedule
           FILES: |
             typescript/tsconfig-dist.json=tsconfig.json
-          TOKEN: ${{ secrets.ACTIONS }}
-      # azure pipelines v1 no tests
-      - name: Azure Pipelines V1 No Tests
-        uses: kbrashears5/github-action-file-sync@master
-        with:
-          REPOSITORIES: |
-            kbrashears5/typescript-ilogger
-            kbrashears5/homebridge-schedule
-          FILES: |
-            typescript/azure-pipelines.yml
-          TOKEN: ${{ secrets.ACTIONS }}
-      # azure pipelines v1 with tests
-      - name: Azure Pipelines V1 With Tests
-        uses: kbrashears5/github-action-file-sync@master
-        with:
-          REPOSITORIES: |
-            kbrashears5/typescript-helper-functions
-            kbrashears5/typescript-cache-helper
-          FILES: |
-            typescript/azure-pipelines-tests.yml=azure-pipelines.yml
-          TOKEN: ${{ secrets.ACTIONS }}
-      # azure pipelines v2 with tests
-      - name: Azure Pipelines V2 With Tests
-        uses: kbrashears5/github-action-file-sync@master
-        with:
-          REPOSITORIES: |
-            kbrashears5/typescript-aws-apigateway-helper
-            kbrashears5/typescript-aws-cloudwatch-helper
-            kbrashears5/typescript-aws-dynamo-helper
-            kbrashears5/typescript-aws-kms-helper
-            kbrashears5/typescript-aws-lambda-helper
-            kbrashears5/typescript-aws-s3-helper
-            kbrashears5/typescript-aws-ses-helper
-            kbrashears5/typescript-aws-sns-helper
-            kbrashears5/typescript-aws-sqs-helper
-            kbrashears5/typescript-aws-ssm-helper
-            kbrashears5/typescript-aws-sts-helper
-          FILES: |
-            typescript/azure-pipelines-v2-tests.yml=azure-pipelines.yml
-          TOKEN: ${{ secrets.ACTIONS }}
-      # azure pipelines v2 no tests
-      - name: Azure Pipelines V2 No Tests
-        uses: kbrashears5/github-action-file-sync@master
-        with:
-          REPOSITORIES: |
-            kbrashears5/typescript-aws-helpers
-          FILES: |
-            typescript/azure-pipelines-v2.yml=azure-pipelines.yml
           TOKEN: ${{ secrets.ACTIONS }}
