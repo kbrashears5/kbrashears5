@@ -1,11 +1,11 @@
 version: 2
 updates:
   ### update dependencies daily
-  - package-ecosystem: "nuget"
-    directory: "/"
-    # daily at 5am UTC
+  - package-ecosystem: 'nuget'
+    directory: '/'
+    # monthly at 5am UTC
     schedule:
-      interval: "weekly"
+      interval: 'monthly'
     # set reviewers
     reviewers:
-      - "kbrashears5"
+      - 'kbrashears5'

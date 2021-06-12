@@ -6,11 +6,14 @@
         "dependabot",
         "editorconfig",
         "entrypoint",
+        "eqeqeq",
         "eslintignore",
         "homebridge",
         "ilogger",
+        "martinbeentjes",
         "npmrc",
         "nuget",
+        "paren",
         "prettierignore",
         "prettierrc"
     ]
