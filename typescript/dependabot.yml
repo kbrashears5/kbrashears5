@@ -12,6 +12,7 @@ updates:
     # set reviewers
     reviewers:
       - 'kbrashears5'
+    # group dependencies
     groups:
       all:
         patterns:
