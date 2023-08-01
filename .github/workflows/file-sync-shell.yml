@@ -27,5 +27,5 @@ jobs:
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
             LICENSE
             shell/dependabot.yml=.github/dependabot.yml
-            shell/sync-github-with-metadata-json.yml=.github/workflows/sync-github-with-metadata-json.yml
+            shell/repo-sync.yml=.github/workflows/repo-sync.yml
           TOKEN: ${{ secrets.ACTIONS }}
