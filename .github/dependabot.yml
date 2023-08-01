@@ -14,12 +14,12 @@ updates:
   #   reviewers:
   #     - "kbrashears5"
 
-  # - package-ecosystem: "github-actions"
-  #   directory: "/python"
-  #   schedule:
-  #     interval: "weekly"
-  #   reviewers:
-  #     - "kbrashears5"
+  - package-ecosystem: "github-actions"
+    directory: "/python"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "kbrashears5"
 
   - package-ecosystem: "github-actions"
     directory: "/shell"
