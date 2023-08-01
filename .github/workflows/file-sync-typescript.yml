@@ -45,7 +45,7 @@ jobs:
             typescript/codeql-analysis.yml=.github/workflows/codeql-analysis.yml
             typescript/dependabot.yml=.github/dependabot.yml
             typescript/pre-commit=.githooks/pre-commit
-            typescript/sync-github-with-package-json.yml=.github/workflows/sync-github-with-package-json.yml
+            typescript/repo-metadata-sync.yml=.github/workflows/repo-metadata-sync.yml
             typescript/tsconfig.eslint.json
           TOKEN: ${{ secrets.ACTIONS }}
       # tsconfig - lib
