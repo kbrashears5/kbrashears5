@@ -3,25 +3,22 @@ name: Python File Sync
 on:
   push:
     branches:
-      - master
-  schedule:
-    - cron: 0 0 * * *
+      - main
 
 jobs:
   file_sync:
     runs-on: ubuntu-latest
     steps:
       - name: Fetching Local Repository
-        uses: actions/checkout@master
+        uses: actions/checkout@v3
       # regular files
       - name: Files
-        uses: kbrashears5/github-action-file-sync@master
+        uses: kbrashears5/github-action-file-sync@v2
         with:
           REPOSITORIES: |
             kbrashears5/github-secret-recycler
           FILES: |
             LICENSE
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
-            .github/workflows/stale-issues.yml=.github/workflows/stale-issues.yml
             python/sync-github-with-metadata-json.yml=.github/workflows/sync-github-with-metadata-json.yml
           TOKEN: ${{ secrets.ACTIONS }}

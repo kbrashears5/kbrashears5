@@ -3,19 +3,17 @@ name: Typescript File Sync
 on:
   push:
     branches:
-      - master
-  schedule:
-    - cron: 0 0 * * *
+      - main
 
 jobs:
   file_syncs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetching Local Repository
-        uses: actions/checkout@master
+        uses: actions/checkout@v3
       # all
       - name: All
-        uses: kbrashears5/github-action-file-sync@master
+        uses: kbrashears5/github-action-file-sync@v2
         with:
           REPOSITORIES: |
             kbrashears5/homebridge-schedule
@@ -36,7 +34,6 @@ jobs:
             kbrashears5/typescript-ilogger
           FILES: |
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
-            .github/workflows/stale-issues.yml=.github/workflows/stale-issues.yml
             LICENSE
             typescript/.eslintignore
             typescript/.eslintrc.yml
@@ -53,7 +50,7 @@ jobs:
           TOKEN: ${{ secrets.ACTIONS }}
       # tsconfig - lib
       - name: tsconfig - lib
-        uses: kbrashears5/github-action-file-sync@master
+        uses: kbrashears5/github-action-file-sync@v2
         with:
           REPOSITORIES: |
             kbrashears5/typescript-aws-apigateway-helper
@@ -76,7 +73,7 @@ jobs:
           TOKEN: ${{ secrets.ACTIONS }}
       # tsconfig - dist
       - name: tsconfig - dist
-        uses: kbrashears5/github-action-file-sync@master
+        uses: kbrashears5/github-action-file-sync@v2
         with:
           REPOSITORIES: |
             kbrashears5/homebridge-schedule

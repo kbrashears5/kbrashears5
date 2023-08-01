@@ -12,7 +12,7 @@ jobs:
       - name: Fetching Local Repository
         uses: actions/checkout@master
       - name: Repo Sync
-        uses: kbrashears5/github-action-repo-sync@master
+        uses: kbrashears5/github-action-repo-sync@v1
         with:
           TYPE: npm
           PATH: metadata.json
