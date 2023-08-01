@@ -13,12 +13,12 @@ jobs:
         uses: actions/checkout@v3
       # regular files
       - name: Files
-        uses: kbrashears5/github-action-file-sync@v2
+        uses: kbrashears5/github-action-file-sync@v3
         with:
           REPOSITORIES: |
             kbrashears5/github-secret-recycler
           FILES: |
-            LICENSE
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
+            LICENSE
             python/sync-github-with-metadata-json.yml=.github/workflows/sync-github-with-metadata-json.yml
           TOKEN: ${{ secrets.ACTIONS }}

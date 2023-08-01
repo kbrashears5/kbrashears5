@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
       # all
       - name: All
-        uses: kbrashears5/github-action-file-sync@v2
+        uses: kbrashears5/github-action-file-sync@v3
         with:
           REPOSITORIES: |
             kbrashears5/homebridge-schedule
@@ -50,7 +50,7 @@ jobs:
           TOKEN: ${{ secrets.ACTIONS }}
       # tsconfig - lib
       - name: tsconfig - lib
-        uses: kbrashears5/github-action-file-sync@v2
+        uses: kbrashears5/github-action-file-sync@v3
         with:
           REPOSITORIES: |
             kbrashears5/typescript-aws-apigateway-helper
@@ -73,7 +73,7 @@ jobs:
           TOKEN: ${{ secrets.ACTIONS }}
       # tsconfig - dist
       - name: tsconfig - dist
-        uses: kbrashears5/github-action-file-sync@v2
+        uses: kbrashears5/github-action-file-sync@v3
         with:
           REPOSITORIES: |
             kbrashears5/homebridge-schedule

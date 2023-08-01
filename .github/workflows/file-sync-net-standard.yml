@@ -13,22 +13,21 @@ jobs:
         uses: actions/checkout@v3
       # regular files
       - name: Files
-        uses: kbrashears5/github-action-file-sync@v2
+        uses: kbrashears5/github-action-file-sync@v3
         with:
           REPOSITORIES: |
+            kbrashears5/net-standard-aws-s3-helper
+            kbrashears5/net-standard-aws-sqs-helper
             kbrashears5/net-standard-cache-helper
             kbrashears5/net-standard-http-helper
             kbrashears5/net-standard-logger
-            kbrashears5/net-standard-test-helper
-            kbrashears5/net-standard-aws-s3-helper
-            kbrashears5/net-standard-aws-sqs-helper
             kbrashears5/net-standard-opc-ua-helper
+            kbrashears5/net-standard-test-helper
           FILES: |
-            LICENSE
-            net-standard/dependabot.yml=.github/dependabot.yml
-            net-standard/.gitignore=.gitignore
-            net-standard/.editorconfig=.editorconfig
-            release-maker.yml=.github/workflows/release-maker.yml
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
+            LICENSE
+            net-standard/.editorconfig=.editorconfig
+            net-standard/.gitignore=.gitignore
             net-standard/codeql-analysis.yml=.github/workflows/codeql-analysis.yml
+            net-standard/dependabot.yml=.github/dependabot.yml
           TOKEN: ${{ secrets.ACTIONS }}
