@@ -12,3 +12,7 @@ updates:
     # set reviewers
     reviewers:
       - 'kbrashears5'
+    groups:
+      all:
+        patterns:
+          - "*"
