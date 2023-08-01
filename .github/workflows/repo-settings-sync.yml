@@ -9,8 +9,8 @@ jobs:
   repo_settings_sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Repo Setup
-        uses: kbrashears5/github-action-repo-settings-sync@v2
+      - name: Repo Settings Sync
+        uses: kbrashears5/github-action-repo-settings-sync@v3.0.0
         with:
           ALLOW_PROJECTS: 'false'
           ALLOW_WIKI: 'false'

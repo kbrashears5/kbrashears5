@@ -1,4 +1,4 @@
-name: Repo Metadata Sync (this repo)
+name: Repo Metadata Sync
 
 on:
   push:

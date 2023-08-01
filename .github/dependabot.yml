@@ -6,3 +6,31 @@ updates:
       interval: "weekly"
     reviewers:
       - "kbrashears5"
+
+  # - package-ecosystem: "github-actions"
+  #   directory: "/net-standard"
+  #   schedule:
+  #     interval: "weekly"
+  #   reviewers:
+  #     - "kbrashears5"
+
+  # - package-ecosystem: "github-actions"
+  #   directory: "/python"
+  #   schedule:
+  #     interval: "weekly"
+  #   reviewers:
+  #     - "kbrashears5"
+
+  - package-ecosystem: "github-actions"
+    directory: "/shell"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "kbrashears5"
+
+  # - package-ecosystem: "github-actions"
+  #   directory: "/typescript"
+  #   schedule:
+  #     interval: "weekly"
+  #   reviewers:
+  #     - "kbrashears5"
