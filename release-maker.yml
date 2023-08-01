@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Release Maker
-        uses: kbrashears5/github-action-release-maker@main
+        uses: kbrashears5/github-action-release-maker@v1
         with:
           VERSION: ${{ github.event.client_payload.version }}
           TOKEN: ${{ secrets.ACTIONS }}

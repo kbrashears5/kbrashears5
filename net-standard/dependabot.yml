@@ -1,11 +1,15 @@
 version: 2
 updates:
-  ### update dependencies daily
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    reviewers:
+      - 'kbrashears5'
+      
   - package-ecosystem: 'nuget'
     directory: '/'
-    # monthly at 5am UTC
     schedule:
       interval: 'monthly'
-    # set reviewers
     reviewers:
       - 'kbrashears5'

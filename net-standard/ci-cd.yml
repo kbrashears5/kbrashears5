@@ -3,13 +3,11 @@ name: CI/CD
 on:
   push:
     branches:
-      - master
       - main
     paths:
       - src/**
   pull_request:
     branches:
-      - master
       - main
     paths:
       - src/**
@@ -35,23 +33,23 @@ jobs:
         run: dotnet test
       - uses: codecov/codecov-action@v1
       - name: Create Package
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ github.ref == 'refs/heads/main' }}
         run: dotnet pack
       - name: Publish Package
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ github.ref == 'refs/heads/main' }}
         run: dotnet nuget push
   release:
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/master' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     needs: build
 
     steps:
       - uses: actions/checkout@v2
       - name: Get NPM Version
         id: package-version
-        uses: martinbeentjes/npm-get-version-action@master
+        uses: martinbeentjes/npm-get-version-action@main
       - name: Github Release
-        uses: kbrashears5/github-action-release-maker@master
+        uses: kbrashears5/github-action-release-maker@main
         with:
           VERSION: ${{ steps.package-version.outputs.current-version}}
           TOKEN: ${{ secrets.ACTIONS }}
