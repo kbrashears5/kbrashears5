@@ -16,39 +16,16 @@ jobs:
         uses: kbrashears5/github-action-file-sync@v2
         with:
           REPOSITORIES: |
-            kbrashears5/github-action-file-sync
-            kbrashears5/github-action-repo-sync
-            kbrashears5/github-action-repo-settings-sync
-            kbrashears5/github-action-release-maker
-            kbrashears5/github-action-issue-assigner
             kbrashears5/github-action-auto-accept-collabs
             kbrashears5/github-action-auto-create-collabs
+            kbrashears5/github-action-file-sync
+            kbrashears5/github-action-issue-assigner
+            kbrashears5/github-action-release-maker
+            kbrashears5/github-action-repo-settings-sync
+            kbrashears5/github-action-repo-sync
           FILES: |
-            LICENSE
-            release-maker.yml=.github/workflows/release-maker.yml
             .github/workflows/issue-assigner.yml=.github/workflows/issue-assigner.yml
+            LICENSE
+            shell/dependabot.yml=.github/dependabot.yml
             shell/sync-github-with-metadata-json.yml=.github/workflows/sync-github-with-metadata-json.yml
-          TOKEN: ${{ secrets.ACTIONS }}
-      # azure pipelines v1
-      - name: Azure Pipelines V1
-        uses: kbrashears5/github-action-file-sync@v2
-        with:
-          REPOSITORIES: |
-            kbrashears5/github-action-repo-sync
-            kbrashears5/github-action-repo-settings-sync
-            kbrashears5/github-action-release-maker
-            kbrashears5/github-action-issue-assigner
-            kbrashears5/github-action-auto-accept-collabs
-            kbrashears5/github-action-auto-create-collabs
-          FILES: |
-            shell/azure-pipelines.yml
-          TOKEN: ${{ secrets.ACTIONS }}
-      # azure pipelines v2
-      - name: Azure Pipelines V2
-        uses: kbrashears5/github-action-file-sync@v2
-        with:
-          REPOSITORIES: |
-            kbrashears5/github-action-file-sync
-          FILES: |
-            shell/azure-pipelines-v2.yml=azure-pipelines.yml
           TOKEN: ${{ secrets.ACTIONS }}
