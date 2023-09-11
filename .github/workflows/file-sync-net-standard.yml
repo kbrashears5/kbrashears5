@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetching Local Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       # regular files
       - name: Files
         uses: kbrashears5/github-action-file-sync@v3.0.0
